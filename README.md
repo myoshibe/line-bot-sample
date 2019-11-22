@@ -3,11 +3,11 @@ A simple example of Looker Action Hub to send a message to your LINE bot.
 ([LINE](https://line.me/en-US/download) is one of the major messaging platforms in Japan.)
 
 # Looker Action Hub References
-[What is Looker Action Hub?](https://docs.looker.com/ja/sharing-and-publishing/action-hub)
-[List of existing Looker Hosted Action Hub](https://docs.looker.com/ja/admin-options/platform/actions#list_of_integrated_services)
-[Looker Action Hub Github Repo](https://github.com/looker/actions/pulls)
-[Reference to Action Hub API](https://github.com/looker/actions/blob/master/docs/action_api.md)
-[Export the Results of a Looker Query to BigQuery](https://discourse.looker.com/t/export-the-results-of-a-looker-query-to-bigquery/9720) 
+- [What is Looker Action Hub?](https://docs.looker.com/ja/sharing-and-publishing/action-hub)
+- [List of existing Looker Hosted Action Hub](https://docs.looker.com/ja/admin-options/platform/actions#list_of_integrated_services)
+- [Looker Action Hub Github Repo](https://github.com/looker/actions/pulls)
+- [Reference to Action Hub API](https://github.com/looker/actions/blob/master/docs/action_api.md)
+- [Export the Results of a Looker Query to BigQuery](https://discourse.looker.com/t/export-the-results-of-a-looker-query-to-bigquery/9720) 
 
 # How to deploy
 1. [Line Business](https://developers.line.biz/ja/) to get a LINE Business account
