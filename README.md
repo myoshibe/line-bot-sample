@@ -20,26 +20,23 @@ A simple example of Looker Action Hub to send a message to your LINE bot.
 1. [Register your new LINE Business Account](https://www.linebiz.com/jp/manual/OfficialAccountManager/app/tutorial/step1/)
 2. [Log in](https://developers.line.biz/ja/) to the Developer console with your LINE Business Account
 3. Set up a **Messenger API Channel** along with [this procedure](https://developers.line.biz/ja/docs/messaging-api/getting-started/)
-4. You can manage your channel at [Console](https://developers.line.biz/console/).
+4. You can manage your channel at [Console](https://developers.line.biz/console/). Keep `Channel access token (long-lived)` 
+ and `Your user ID`
 
-`Channel access token (long-lived) `
-<img width="1141" alt="Screen Shot 2019-11-16 at 9.07.30.png" src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/486566/d3025f1e-78a7-b974-e458-3cfabb5a40bd.png">
-`Your user ID `
-<img width="1132" alt="Screen Shot 2019-11-16 at 9.07.41.png" src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/486566/344b78ff-e70d-4fc7-3a1f-479c51733241.png">
-
-5. Read a bot QR code `QR code of your bot` and add to your LINE friend
+5. Read a bot QR code `QR code` of your bot and add to your LINE friend
 
 ### 2. Deploy your Action Hub Server on Heroku
 1. Access to [Heroku](https://www.heroku.com/home), if you don't have heroku account, create one from [<img width="72" alt="Screen Shot 2019-11-15 at 21.29.32.png" src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/486566/5be19d27-067c-f8a8-5d70-2c5271d9401f.png">](https://id.heroku.com/signup/login) 
 2. Deploy this sample application to your heroku by clicking [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy) to deploy your Heroku. Names your application
-3. Set your application vars at ```Settings``` > ```Reveal Config Vars```
+3. Set your application vars at `Settings` > `Reveal Config Vars`
 <img width="612" alt="Screen Shot 2019-11-15 at 21.56.41.png" src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/486566/34a7b0e7-01e3-4976-6f38-b8bb8d0a2515.png">
-4. Enter your ```Channel access token (long-lived) ``` and ```Your user ID ``` as an environment variable. Var names should be ```CHANNEL_ACCESS_TOKEN```, ```LINE_USER_ID```
+
+4. Enter your `Channel access token (long-lived)` and `Your user ID` as an environment variable. Var names should be `CHANNEL_ACCESS_TOKEN`, `LINE_USER_ID`
 <img width="1227" alt="Screen Shot 2019-11-15 at 22.02.57.png" src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/486566/97e8d2bd-c555-d00b-b2fa-4e5baff12b2f.png">
 
 ### 3. Looker Set Up
 5. Access to https://{your_looker_instance}/admin/actions and set up your Action Hub Server, click <img width="115" alt="Screen Shot 2019-11-15 at 22.06.08.png" src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/486566/1c45fb53-687a-3c95-4218-6f0a157ae282.png"> button
-6. Enter as ```https://{your_heroku_app_name}.herokuapp.com/action_list``` and click ```Add Action Hub```
+6. Enter as `https://{your_heroku_app_name}.herokuapp.com/action_list` and click `Add Action Hub`
 <img width="1210" alt="Screen Shot 2019-11-15 at 22.07.35.png" src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/486566/bc07bcf8-a48b-1caf-d839-18987691f0e9.png">
 7. Click `Enable` and `Save`
 <img width="1188" alt="Screen Shot 2019-11-15 at 22.10.41.png" src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/486566/c668a75d-505a-88b7-7d20-2fbef67b87e6.png">
